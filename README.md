@@ -1,10 +1,10 @@
 ## 動作
 ```
-$ ruby lib/vending_machine.rb`
+$ ruby lib/vending_machine.rb
 ```
 ## パス
 ```
-ユーザー任意/Vending_Machine_Practice/lib/vending_machine.rb`
+ユーザー任意/Vending_Machine_Practice/lib/vending_machine.rb
 ```
 ## 自動販売機機能一覧
 初期設定
