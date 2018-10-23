@@ -1,4 +1,4 @@
-class Vender
+class VendingMachine
   MONEY = [10, 50, 100, 500, 1000].freeze
   def initialize
     @slot_money = 0
@@ -69,4 +69,3 @@ class Vender
   end
 
 end
-Vender.new
