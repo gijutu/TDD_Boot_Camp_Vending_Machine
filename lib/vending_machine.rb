@@ -18,13 +18,14 @@ class Vender
       @slot_money += money
       puts "現在#{@slot_money}円投入されています"
     else
-      puts "そのお金は想定の範囲外のお金です#{money}円返却します"
+      puts "想定外のお金です#{money}円返却します"
     end
   end
 # 投入金額と商品の金額を差し引いた金額が返却できる
   def return_money
-    @return_money = @slot_money - @coke.price
+    @return_money = @slot_money - @drink.price
     puts @return_money
+    @slot_money = 0
   end
 # 買えるものを表示させることができる
   def select_view
@@ -36,9 +37,7 @@ class Vender
       puts "3:水#{@water.price}円"
     else
       puts "買えるものがありません"
-      self.slot_money
     end
-    self.purchase
   end
 # 購入することができる
 # 買ったら自動で在庫数が動くメソッドを作る
@@ -72,5 +71,3 @@ class Vender
   end
 
 end
-
-Vender.new.purchase 1

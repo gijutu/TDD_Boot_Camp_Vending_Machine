@@ -2,7 +2,7 @@
 ruby lib/vending_machine.rb
 
 ## 絶対パスで動かなかったので,requireを相対パスに。
- ユーザー任意/Vending_Machine_Practice/lib/vanding_/machine.rb
+ ユーザー任意/Vending_Machine_Practice/lib/vending_machine.rb
 
 # 自動販売機機能一覧
 ## 初期設定
@@ -17,12 +17,13 @@ Vender.new.purchase
 Vender.new.select_view
 ## 取り出し口
 Vender.new.pull_drink
-## 在庫情報
-Vender.new.stock_drink
-
 
 # ユーザー操作
 ## お金を入れる
 Vender.new.slot_money 100
 ## 商品を買う
 Vender.new.purchase 1
+
+# 管理者操作
+## 在庫情報
+Vender.new.stock_drink
