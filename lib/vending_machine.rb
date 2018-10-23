@@ -1,5 +1,3 @@
-require '/Users/michishitatsubasa/workspace/Vending_Machine_Practice/lib/drink'
-
 class Vender
   MONEY = [10, 50, 100, 500, 1000].freeze
   def initialize
@@ -58,7 +56,7 @@ class Vender
       puts '購入できません'
     end
   end
-# 買ったものをだすことができる、switchメソッドで在庫が減ったものが出力される
+# 買ったもの(商品)をだすことができる、switchメソッドで在庫が減ったものが出力される
 # お釣りを返却する
   def pull_drink_money
     puts @drink.name
@@ -71,3 +69,4 @@ class Vender
   end
 
 end
+Vender.new
