@@ -1,3 +1,8 @@
+## 動作
+ruby lib/vanding_/vender_proto.rb
+で動きます。
+## 絶対パスで動かなかったので,requireを相対パスに。
+ ユーザー任意/Vending_Machine_Practice/lib/vanding_/machine.rb
 # ユーザー操作一覧
 # 初期設定
 Vender.new
